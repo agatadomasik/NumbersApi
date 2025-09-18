@@ -1,0 +1,55 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.pidb
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Visual Studio
+.vs/
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+
+# NuGet packages
+*.nupkg
+
+**/packages/*
+
+# Dotnet Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# DotCover
+*.dotCover
+
+# Coverage
+*.coverage
+*.coveragexml
+*.testresults/
+*.trx
+
+# Others
+*.log
+*.bak
+*.swp

@@ -1,0 +1,44 @@
+@NumbersApi_HostAddress = https://localhost:7049
+@ContentType = application/json
+
+POST {{NumbersApi_HostAddress}}/numbers
+Content-Type: {{ContentType}}
+{
+  "numbers": [2, 5, 8, 3]
+}
+
+###
+
+GET {{NumbersApi_HostAddress}}/numbers/
+Accept: {{ContentType}}
+
+###
+
+GET {{NumbersApi_HostAddress}}/numbers/sorted?sort=asc
+Accept: {{ContentType}}
+
+###
+
+GET {{NumbersApi_HostAddress}}/numbers/sorted?sort=desc
+Accept: {{ContentType}}
+
+###
+
+GET {{NumbersApi_HostAddress}}/numbers/search?value=5
+Accept: {{ContentType}}
+
+###
+
+GET {{NumbersApi_HostAddress}}/numbers/stats
+Accept: {{ContentType}}
+
+###
+
+POST {{NumbersApi_HostAddress}}/numbers/process/parallel
+Content-Type: {{ContentType}}
+
+{
+  "numbers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+}
+
+###
